@@ -36,7 +36,7 @@ session = tf.Session()
 # Init tf.Variable objects
 session.run(tf.global_variables_initializer())
 
-for epoch in range(10000):
+for epoch in range(40000):
     session.run(minimize_operation, {model.x: x_train, model.y: y_train})
 
 # Evaluate training accuracy
